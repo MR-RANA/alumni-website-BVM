@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <style>
+    #ABC {
+        background-image: url(https://wallpaperaccess.com/full/2687834.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+
+
+<link rel="icon" href="https://www.bvmengineering.ac.in/images/BVM%20Logo-1.png" type="image/x-icon">
+
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>BIRLA VISHVAKARMA MAHAVIDHYALAYA</title>
+</head>
+<body>
+  
+  <header class="text-gray-600 body-font" id="ABC">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" >
+        <a ui-sref="inapp.portfolio" class="align-self-center" style="text-decoration:none" href="">      <a href="INDEX.HTML">    <!-- ngIf: (college_logo != 0) --><img loading="lazy" class="" ng-attr-style="{{::moduleData.tConfiguration.logoStyles}}" ng-if="(college_logo != 0)" src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/institutes/logo/170x170/524.jpg?v=1579590967" style="max-height:75px; max-width:100%;"><!-- end ngIf: (college_logo != 0) -->    </a>      </a>
+        <span class="ml-3 text-xl text-white"> <a href="INDEX.HTML">BVM Alumni Association</a></span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-white justify-center">
+        <span ng-repeat-end="" class="rel-pos ng-scope" ng-if="tab.type=='dropdown'">
+          <a class="link-detail mdl-cell--hide-phone link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" ng-click='toggle5list("tab_"+order)' click-anywhere-but-here="close5list('tab_'+order)" style="text-transform:uppercase;letter-spacing:1px"> Events <i class="icon-keyboard_arrow_down rel-pos inline-block" style="right:4px;width:8px"> </i> </a>
+          <div ng-show="islistOpened('tab_'+order)" class="mdl-shadow--2dp header-others camel-case mdl-color--white categories-animate overflow-hidden" ng-class="(mobile_screen)?'show-as-drawer overflow-auto':'categories-animate overflow-hidden'" style="top: auto; min-width: 175px; max-width: 250px; text-align: left;">
+            <ul class="mdl-list" style="margin:0px;">
+              <!-- ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="events" target="" style="white-space: initial;min-width: 250px;"> <a href="EVENTS.HTML">Events</a>  </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="galleries" target="" style="white-space: initial;min-width: 250px;"> <a href="GALLERY.HTML">Galleries</a> </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content -->
+            </ul>
+          </div>
+        </span>
+        <span ng-repeat-end="" class="rel-pos ng-scope" ng-if="tab.type=='dropdown'">
+          <a class="link-detail mdl-cell--hide-phone link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" ng-click='toggle5list("tab_"+order)' click-anywhere-but-here="close5list('tab_'+order)" style="text-transform:uppercase;letter-spacing:1px"> News &amp; Stories <i class="icon-keyboard_arrow_down rel-pos inline-block" style="right:4px;width:8px"></i> </a>
+          <div ng-show="islistOpened('tab_'+order)" class="mdl-shadow--2dp header-others camel-case mdl-color--white ng-hide categories-animate overflow-hidden" ng-class="(mobile_screen)?'show-as-drawer overflow-auto':'categories-animate overflow-hidden'" style="top:auto; min-width: 175px;max-width:250px;text-align:left">
+            <ul class="mdl-list" style="margin:0px;">
+              <!-- ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="campusfeed" target="" style="white-space: initial;min-width: 250px;"><a href="NEWS.HTML"> All News &amp; Stories</a> </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content -->
+            </ul>
+          </div>
+        </span>
+        <span ng-repeat-end="" class="rel-pos ng-scope" ng-if="tab.type=='dropdown'">
+          <a class="link-detail mdl-cell--hide-phone link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" ng-click='toggle5list("tab_"+order)' click-anywhere-but-here="close5list('tab_'+order)" style="text-transform:uppercase;letter-spacing:1px"> Batchmates <i class="icon-keyboard_arrow_down rel-pos inline-block" style="right:4px;width:8px"></i> </a>
+          <div ng-show="islistOpened('tab_'+order)" class="mdl-shadow--2dp header-others camel-case mdl-color--white ng-hide categories-animate overflow-hidden" ng-class="(mobile_screen)?'show-as-drawer overflow-auto':'categories-animate overflow-hidden'" style="top:auto; min-width: 175px;max-width:250px;text-align:left">
+            <ul class="mdl-list" style="margin:0px;">
+              <!-- ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="members" target="" style="white-space: initial;min-width: 250px;"> <a href="YEARBOOK.HTML">Yearbook </a></a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="platform/invitation" target="" style="white-space: initial;min-width: 250px;"><a href="INVITE BATCHMATES.HTML">Invite Batchmates</a> </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content -->
+            </ul>
+          </div>
+        </span>
+        <span ng-repeat-end="" class="rel-pos ng-scope" ng-if="tab.type=='dropdown'">
+          <a class="link-detail mdl-cell--hide-phone link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" ng-click='toggle5list("tab_"+order)' click-anywhere-but-here="close5list('tab_'+order)" style="text-transform:uppercase;letter-spacing:1px"> Find Alumni <i class="icon-keyboard_arrow_down rel-pos inline-block" style="right:4px;width:8px"></i> </a>
+          <div ng-show="islistOpened('tab_'+order)" class="mdl-shadow--2dp header-others camel-case mdl-color--white ng-hide categories-animate overflow-hidden" ng-class="(mobile_screen)?'show-as-drawer overflow-auto':'categories-animate overflow-hidden'" style="top:auto; min-width: 175px;max-width:250px;text-align:left">
+            <ul class="mdl-list" style="margin:0px;">
+              <!-- ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="search" target="" style="white-space: initial;min-width: 250px;"><a href="LOGIN_REGISTER.html"> Alumni Directory </a></a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="map" target="" style="white-space: initial;min-width: 250px;"><a href="ALUMNI NEARBY.HTML"> Alumni Nearby </a></a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content -->
+            </ul>
+          </div>
+        </span>
+        <span ng-repeat-end="" class="rel-pos ng-scope" ng-if="tab.type=='dropdown'">
+          <a class="link-detail mdl-cell--hide-phone link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" ng-click='toggle5list("tab_"+order)' click-anywhere-but-here="close5list('tab_'+order)" style="text-transform:uppercase;letter-spacing:1px"> Careers <i class="icon-keyboard_arrow_down rel-pos inline-block" style="right:4px;width:8px"></i> </a>
+          <div ng-show="islistOpened('tab_'+order)" class="mdl-shadow--2dp header-others camel-case mdl-color--white ng-hide categories-animate overflow-hidden" ng-class="(mobile_screen)?'show-as-drawer overflow-auto':'categories-animate overflow-hidden'" style="top:auto; min-width: 175px;max-width:250px;text-align:left">
+            <ul class="mdl-list" style="margin:0px;">
+              <!-- ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="jobs" target="" style="white-space: initial;min-width: 250px;"><a href="LOGIN_REGISTER.html"> Jobs</a> </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="jobs?tab=e_internships" target="" style="white-space: initial;min-width: 250px;"> <a href="LOGIN_REGISTER.html">Internship</a> </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content -->
+            </ul>
+          </div>
+        </span>
+        <span ng-repeat-end="" class="rel-pos ng-scope" ng-if="tab.type=='dropdown'">
+          <a class="link-detail mdl-cell--hide-phone link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" ng-click='toggle5list("tab_"+order)' click-anywhere-but-here="close5list('tab_'+order)" style="text-transform:uppercase;letter-spacing:1px"> About <i class="icon-keyboard_arrow_down rel-pos inline-block" style="right:4px;width:8px"></i> </a>
+          <div ng-show="islistOpened('tab_'+order)" class="mdl-shadow--2dp header-others camel-case mdl-color--white ng-hide categories-animate overflow-hidden" ng-class="(mobile_screen)?'show-as-drawer overflow-auto':'categories-animate overflow-hidden'" style="top:auto; min-width: 175px;max-width:250px;text-align:left">
+            <ul class="mdl-list" style="margin:0px;">
+              <!-- ngRepeat: (suborder,subtab) in tab.content --><!-- ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <li ng-repeat-start="(suborder,subtab) in tab.content" class="mdl-list__item drawer-list padding-tb-4 ng-scope" ng-if="subtab.type=='link' &amp;&amp; (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin)"><a class="mdl-list__item-primary-content link-detail mdl-typography--font-light mdl-color-text--grey-600 font-15 ng-binding" href="about" target="" style="white-space: initial;min-width: 250px;"><a href="ABOUT US.HTML">About</a> </a></li>
+              <!-- end ngIf: subtab.type=='link' && (subtab.name!='Admin Dashboard' || $root.app_data.isAdmin) -->
+              <!-- ngIf: subtab.type=='state' -->
+              <!-- ngIf: subtab.type=='separator' --><!-- end ngRepeat: (suborder,subtab) in tab.content -->
+            </ul>
+          </div>
+        </span>
+        <span ng-repeat-start="(order,tab) in headerConfig" class="ng-scope" ng-if="tab.type=='link' &amp;&amp; (tab.name!='Admin Dashboard' || $root.app_data.isAdmin)"> <a class="link-detail link-detail--white link-detail-background--dark mdl-color-text--white padding-16 inline-block center-alignment font-16 mdl-typography--font-regular" ng-attr-style="{{templateData.tConfiguration.tabsStyles}}" href="donation" target="" style="text-transform:uppercase;letter-spacing:1px"> <a href="DONATE.HTML">Donation</a> </a> </span>
+      
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black mt-4 md:mt-0">
+        <a href="LOGIN_REGISTER.html">Sign Up / Login</a>        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  </header>
+
+
+
+ 
+
+  <section class="text-white body-font" id="ABC">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 text-white">News!!</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-white"> Be alerted every time what the events and a webinar going on.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://www.fda.gov/files/covid19-1600x900.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">covid</h2>
+              <h3 class="text-white mb-3"> Covid research at bvm</h3>
+              <p class="mb-4">Our faculty is planning to make pre caution notes to cure stop covid chain</p>
+              <span class="inline-flex">
+                <a class="text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://robofest.net/wro-usa/images/robofestMascot_transp.png">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">Robofest</h2>
+              <h3 class="text-white mb-3">Upcoming dates and online forms</h3>
+              <p class="mb-4"> The forms of robofest will be available at 20, january,2020. and present your ideas also</p>
+              <span class="inline-flex">
+                <a class="text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://www.amritapuri.org/images/2018/07/18-amrita-mou-harward.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">MOU with harvard</h2>
+              <h3 class="text-white mb-3">Efforts of bvm family</h3>
+              <p class="mb-4">Dr. indrajit patel will going plan a mou with havard and mit too , but there is a strong possiblitiy of havard bcz of research subject.</p>
+              <span class="inline-flex">
+                <a class="text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://miro.medium.com/max/1080/0*KhL4ojzrzqCOcV7n.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">BVM youth triggered at isro</h2>
+              <h3 class="text-white mb-3">The two youth of bvm at isro </h3>
+              <p class="mb-4"> Two youth will do the project of venus exploration and anaylisis of aerial site with help of isro.</p>
+              <span class="inline-flex">
+                <a class="text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-white">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="text-gray-600 body-font relative" id="ABC">
+    <div class="absolute inset-0 bg-gray-300" id="ABC">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7105367330237!2d72.92163631495919!3d22.55251358519318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e74c03b7749%3A0xab364c66fd4834c!2sBirla%20Vishvakarma%20Mahavidyalaya%20(BVM)!5e0!3m2!1sen!2sin!4v1610214881774!5m2!1sen!2sin" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="container px-5 py-24 mx-auto flex">
+      <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <h2 class="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-white outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-white outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="INDEX.HTML">Submit</a></button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="text-white body-font" id="ABC">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <a ui-sref="inapp.portfolio" class="align-self-center" style="text-decoration:none" href="">            <!-- ngIf: (college_logo != 0) --><img loading="lazy" class="" ng-attr-style="{{::moduleData.tConfiguration.logoStyles}}" ng-if="(college_logo != 0)" src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/institutes/logo/170x170/524.jpg?v=1579590967" style="max-height:75px; max-width:100%;"><!-- end ngIf: (college_logo != 0) -->    </a>      </a>
+          <span class="ml-3 text-xl"> <a href="INDEX.HTML">BIRLA VISHVAKARMA MAHAVIDYALAYA</a></span>
+        </a>
+        <p class="mt-2 text-sm text-white">AN AUTONOMOUS INSTITUTION</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3"><a href="INDEX.HTML">HOME</h2></a>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white text-white"><a href="ABOUT US.HTML"> ABOUT US </a></a>
+            </li>
+            <li>
+              <a class="text-white text-white"><a href="DONATE.HTML">DONATE</a> </a>
+            </li>
+            <li>
+              <a class="text-white text-white"><a href="LOGIN_REGISTER.html">REGISTER</a></a>
+            </li>
+            <li>
+              <a class="text-white text-white"><a href="BVM TALKS.HTML">BVM TALKS</a></a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3"><a href="FESTIVALS.HTML">FESTIVALS</a></h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white text-white">UDAAN</a>
+            </li>
+            <li>
+              <a class="text-white text-white">XITIJ</a>
+            </li>
+            <li>
+              <a class="text-white text-white">VOLCANO</a>
+  </li>
+            <li>
+              <a class="text-white text-white">HORIZON</a>
+            </li>
+            <li>
+              <a class="text-white text-white">YOUTH</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">QUICK LINKS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white text-white"><a href="https://www.bvmengineering.ac.in/"> SITE</a></a>
+            </li>
+            <li>
+              <a class="text-white text-white"><a href="https://www.bvmengineering.ac.in/login.aspx">ERP SITE</a></a>
+            </li>
+            <li>
+              <a class="text-white text-white"><a href="https://ewh.ieee.org/sb/gujarat/bvmec/">IEEE BVM</a></a>
+  </li>
+            <li>
+              <a class="text-white text-white"><a href="https://dsc.community.dev/birla-vishvakarma-mahavidyalaya-engineering-college/"> Developer Student Club BVM </a></a>
+            </li>
+            <li>
+              <a class="text-white text-white"><a href="https://saeindia.org/collegiate-clubs/">SAE INDIA</a></a>
+            </li>
+          </nav>
+        </div>
+       
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-black text-sm text-center sm:text-left">© 2020 M^2
+          <a href="" rel="noopener noreferrer" class="text-black ml-1" target="_blank">@M^2</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-black">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-black">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-black">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-black">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
